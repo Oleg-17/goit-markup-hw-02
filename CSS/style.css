@@ -34,16 +34,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.studio {
+.site-nav .link.current{
   color: var(--blu-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em
-}
+} 
 
-.portfolio {
+.link {
   color: var(--blak-text);
   font-style: normal;
   font-weight: 500;
@@ -52,35 +47,24 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts {
-  color: var(--blak-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em
-}
-
-.mail {
-  color: var(--blu-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em
-}
-
-.nomber {
+.lin {
   color: var(--grey-text);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em
+}
+
+.lin:hover{
+  color: var(--blu-text);  
+}
+
+.section-background {
+  background-color: #2F303A;
 }
 
 .section {
-  background-color: #2F303A;
   color: var(--white-text);
   font-style: normal;
   font-weight: 900;
@@ -176,8 +160,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-.bottons-white {
-  color: var(--white-text);
+.botton {
+  font-family: inherit;
+  color: var(--blak-text);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -185,14 +170,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-
-.bottons {
-  color: var(--blak-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
+.botton:hover {
+  color: var(--white-text); 
 }
 
 .product {
@@ -211,4 +190,18 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
